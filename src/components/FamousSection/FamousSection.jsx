@@ -17,7 +17,6 @@ function FamousSection() {
     // TODO: fetch the list of people from the server
     axios.get('/people')
     .then((response) => {
-      console.log('The response from get is:', response.data)
       setPeopleArray(response.data)
     }).catch((error) => {
       console.log('Error with GET', error)
